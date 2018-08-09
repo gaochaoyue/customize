@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service
+server:
+  port: 8080
+eureka:
+   client:
+     serviceUrl:
+       defaultZone: http://abs:1qaz2WSX@10.248.50.221:8761/eureka/
+   instance:
+       preferIpAddress: true
+       instanceId: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}}
