@@ -1,0 +1,17 @@
+server:
+    port: 8810
+security:
+  basic:
+    enabled: false
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      #defaultZone: http://abs:1qaz2WSX@10.248.50.221:8761/eureka/
+      defaultZone: http://username:password@localhost:9090/eureka/
+spring:
+  application:
+    name: zipkin-server--self
+  zipkin:
+    enabled: false

@@ -38,6 +38,12 @@
 		 他可以用于服务间通讯，例如：配置文件的更改
 
 		-->
+
+		<!-- eureka 注册中心-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
